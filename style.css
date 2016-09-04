@@ -1,0 +1,56 @@
+html {
+  flex: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  min-height: 100%;
+}
+
+.container {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  max-width: 1024px;
+  padding: .5rem 1.5rem;
+  width: 1024px;
+}
+
+.examples-pane,
+.data-pane {
+  display: flex;
+  flex: 0 0 50%;
+}
+
+.examples-pane {
+  border: 1px solid #333;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.data-pane {
+  overflow-x: auto;
+}
+
+.data-pane > pre {
+  background: #f8f8f8;
+  margin: 0;
+}
+
+.result-ace {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.input-ace {
+  min-height: 3rem;
+}
