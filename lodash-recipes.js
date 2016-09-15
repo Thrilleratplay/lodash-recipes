@@ -13,6 +13,10 @@
         header: 'Unique list of networks in alphabetical order',
         input: '_.uniq(_.map(data,"network.name").sort());',
       },
+      {
+        header: 'Does an array contain an object with the properties of name equaling "Hell\'s Kitchen" and network.name equaling "FOX"',
+        input: '_.some(data, {"name":"Hell\'s Kitchen", "network":{"name": "FOX"}});',
+      },
     ]
   };
 
